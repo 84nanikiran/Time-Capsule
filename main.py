@@ -1,7 +1,7 @@
 # main.py
 
 import logging
-from flask import Flask
+from flask import Flask, redirect, url_for
 from time_capsule import TimeCapsule
 from modules.web_server import configure_routes
 import atexit
@@ -12,6 +12,7 @@ from werkzeug.serving import make_server
 import threading
 import os
 import time
+from modules.ai_module import AIModule
 
 DEBUG_LOG = "time_capsule_debug.log"
 
@@ -34,12 +35,14 @@ def configure_logging():
     logging.getLogger('urllib3').setLevel(logging.WARNING)
 
 def create_app(shutdown_event):
-    """Create and configure the Flask application."""
     app = Flask(__name__)
-    time_capsule = TimeCapsule()
-    time_capsule.initialize()
-    configure_routes(app, time_capsule, shutdown_event)
-    return app, time_capsule
+    configure_routes(app, shutdown_event)
+
+    @app.route('/')
+    def index():
+        return redirect(url_for('login'))
+
+    return app
 
 def shutdown_server(server, time_capsule):
     """Shutdown the server and stop the Time Capsule."""
@@ -74,7 +77,7 @@ def main():
     global shutdown_event
     shutdown_event = threading.Event()
 
-    app, time_capsule = create_app(shutdown_event)
+    app = create_app(shutdown_event)
 
     global server
     server = None
