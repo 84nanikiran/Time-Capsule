@@ -3,6 +3,30 @@
 Time Capsule is a powerful tool designed to continuously capture and store your digital activities, creating a comprehensive digital memory. It provides a core system for data management with a web interface for interaction and optional plugins for various data capture methods.
 
 ## ✨ Current Features
+1. AI-Enhanced Time Capsules
+	•	AI Time Restoration: Enhance old or low-quality photos/videos using AI-powered upscaling, colorization, and restoration.
+	•	Future Self Predictions: AI generates future-aged versions of users’ photos and videos to simulate how they might look in 10, 20, or 50 years.
+	•	AI Memory Compilation: Automatically creates nostalgic video montages with music, captions, and personalized highlights from stored memories.
+
+2. Smart Media Organization
+	•	AI Content Sorting: Automatically tags, categorizes, and organizes photos/videos based on faces, locations, events, and emotions.
+	•	Memory Search: Users can search for memories using natural language (e.g., “Show me my birthday pictures from 2018”).
+	•	Smart Recap: AI summarizes long videos into short highlight reels using facial recognition and scene detection.
+
+3. Interactive AI Features
+	•	AI Storytelling Mode: Converts photos and videos into narrated stories with AI-generated voiceovers and contextual details.
+	•	AI-Powered Reactions: AI suggests captions, hashtags, and emojis based on the emotions detected in the media.
+	•	Deepfake Time Travel: Users can merge their past and present selves into a single video conversation using AI.
+
+4. Social & Engagement Features
+	•	AI-Powered Time Capsules: Users can send AI-generated messages that simulate their voice and thoughts for future delivery.
+	•	Interactive AI Avatars: Users create AI avatars that evolve over time and can send pre-recorded messages in a future-simulated voice.
+AI-Generated Reunions: The app suggests the best times for friends/family to reconnect based on past interactions and schedules.
+
+5. Privacy & Security Features
+	•	AI Anonymization: Users can blur faces or remove sensitive details before sharing.
+	•	AI-Powered Access Control: AI verifies identity before unlocking time capsules (voice, face, or behavior-based authentication).
+	•	AI Memory Vault: Encrypts time capsules with AI-driven security, ensuring only authorized users can access them.
 
 - 🎙️ Real-time microphone recording
 - 🗣️ Speech-to-text transcription using Fast-Whisper library
